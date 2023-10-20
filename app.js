@@ -1,6 +1,10 @@
 // Recuperamos TODOS los elementos HTML que cumplen con la condición class="button"
-const buttons = document.querySelectorAll('.button');
+const buttons = document.querySelector('.buttons');
 const body = document.querySelector('body');
+
+buttons.addEventListener("click", (event) => {
+    body.style.background = event.target.id;
+})
 
 // body.addEventListener("click", (event) => {
 //     if (event.target.id === 'grey') {
@@ -13,6 +17,3 @@ const body = document.querySelector('body');
 //         body.style.background = 'yellow';
 // })
 
-body.addEventListener("click", (event) => {
-    body.style.background = event.target.id;
-})

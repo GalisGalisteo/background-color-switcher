@@ -2,8 +2,6 @@
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
 
-// Para cada botón del array 'buttons', invocamos a la función 'addButtonListener'
-buttons.forEach(addButtonListener);
 
 // Función invocada por forEach, también llamada, función de 'callback'. Esta función va a ser invocada tantas veces como elementos contenga el array 'buttons'. El parámetro "button" es siempre un elemento del array 'buttons'
 function addButtonListener(button) {
@@ -16,3 +14,6 @@ function addButtonListener(button) {
         // body.style.backgroundColor = e.target.backgroundColor
     })
 }
+
+// Para cada botón del array 'buttons', invocamos a la función 'addButtonListener'
+buttons.forEach(addButtonListener);

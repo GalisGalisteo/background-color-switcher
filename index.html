@@ -8,16 +8,18 @@
     <title>JavaScript Background Color Switcher</title>
 </head>
 <body>
-    <div class="canvas">
-     <h1>Color Scheme Switcher</h1>
-    <div class="buttons">
-        <span class="button" id="grey"></span>
-        <span class="button" id="white"></span>
-        <span class="button" id="blue"></span>
-        <span class="button" id="yellow"></span>
+    <div id="app">
+        <div class="canvas">
+            <h1>Color Scheme Switcher</h1>
+            <div @click="changeBgColor" class="buttons">
+                <span class="button" id="grey"></span>
+                <span class="button" id="white"></span>
+                <span class="button" id="blue"></span>
+                <span class="button" id="yellow"></span>
+            </div>
+            <h2>Try clicking on one of the colors above <span>to change the background color of this page!</span></h2>
+        </div>
     </div>
-    <h2>Try clicking on one of the colors above <span>to change the background color of this page!</span></h2>   
-    </div>
-    <script src="app.js"></script>
+    <script type="module" src="app-vue.js"></script>
 </body>
 </html>
